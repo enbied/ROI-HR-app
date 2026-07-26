@@ -2,7 +2,7 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 
 void SplashScreen.preventAutoHideAsync();
-
+ 
 import * as React from 'react';
 import { View, FlatList, ScrollView, Image, Alert } from 'react-native';
 import {
@@ -41,7 +41,7 @@ const PeopleContext = React.createContext();
 const headerWhiteIcons = {
   color: '#FFFFFF',
 };
-
+ 
 function PeopleProvider({ children }) {
   const [people, setPeople] = React.useState(initialPeople);
 
@@ -51,8 +51,8 @@ function PeopleProvider({ children }) {
     </PeopleContext.Provider>
   );
 }
-
-// IMPORT LOGO
+ 
+// IMPORT LOGO 
 const LogoTitle = () => (
   <Image
     source={require('./assets/ROI_logo.png')}
@@ -64,9 +64,9 @@ const LogoTitle = () => (
       marginRight: 20,
     }}
   />
-);
-
-// LIST DROP-DOWN OPTIONS
+); 
+ 
+// LIST DROP-DOWN OPTIONS 
 const stateOptions = [
   { label: 'NSW', value: 'NSW' },
   { label: 'VIC', value: 'VIC' },
@@ -77,21 +77,21 @@ const stateOptions = [
   { label: 'NT', value: 'NT' },
   { label: 'ACT', value: 'ACT' },
 ];
-
+ 
 const departmentOptions = [
   { label: 'Department 1', value: 1 },
   { label: 'Department 2', value: 2 },
   { label: 'Department 3', value: 3 },
 ];
-
+ 
 const permissionOptions = [
   { label: 'System Administrator', value: 'systemAdministrator' },
   { label: 'Management', value: 'management' },
   { label: 'Human Resources', value: 'humanResources' },
   { label: 'Standard Employee', value: 'standardEmployee' },
   { label: 'Inactive', value: 'inactive' },
-];
-
+]; 
+ 
 function SimpleDropdown({ label, value, onChange, options }) {
   const [visible, setVisible] = React.useState(false);
 
