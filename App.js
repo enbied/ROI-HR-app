@@ -3,6 +3,7 @@ import * as SplashScreen from 'expo-splash-screen';
 
 void SplashScreen.preventAutoHideAsync();
 
+
 import * as React from 'react';
 import { View, FlatList, ScrollView, Image, Alert } from 'react-native';
 import {

@@ -11,6 +11,7 @@ export const initialPeople = [
     department: 1,
     permissionsType: 'management',
   },
+
   {
     id: 2,
     name: 'Sue White',
