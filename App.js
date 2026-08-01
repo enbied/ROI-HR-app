@@ -1,3 +1,5 @@
+// minor comment addition
+
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 
